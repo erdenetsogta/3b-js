@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <div class="columns mt-6">
+      <div class="column is-half is-offset-one-quarter">
+        <div class="mb-4 buttons">
+          <button class="button" onclick="evenOdd();">Even or Odd</button>
+
+          <button class="button" onclick="ageGroup();">Age Group</button>
+
+          <button class="button" onclick="loginSystem();">Login System</button>
+
+          <button class="button" onclick="largerNumber();">
+            Larger Number
+          </button>
+
+          <button class="button" onclick="trafficLight();">
+            Traffic Light
+          </button>
+
+          <button class="button" onclick="rockPaperScissors();">
+            Rock Paper Scissors
+          </button>
+        </div>
+
+        <article class="message">
+          <div class="message-body" id="result"></div>
+        </article>
+      </div>
+    </div>
+
+    <script>
+      let output;
+
+      function print() {
+        document.getElementById("result").innerText = output;
+      }
+
+      function evenOdd() {
+        const input = prompt("Enter a number");
+        const num = Number(input);
+
+        if (num % 2 == 0) {
+          output = "Even";
+        } else {
+          output = "Odd";
+        }
+
+        print();
+      }
+
+      function ageGroup() {
+        const input = prompt("Enter an age");
+        const age = Number(input);
+
+        if (age < 13) {
+          output = "Child";
+        }
+
+        if (age >= 13 && age <= 19) {
+          output = "Teen";
+        }
+
+        if (age >= 20 && age <= 65) {
+          output = "Adult";
+        }
+
+        if (age > 65) {
+          output = "Senior";
+        }
+
+        print();
+      }
+
+      function loginSystem() {
+        //
+      }
+
+      function largerNumber() {
+        //
+      }
+
+      function trafficLight() {
+        //
+      }
+
+      function rockPaperScissors() {
+        //
+      }
+    </script>
+  </body>
+</html>

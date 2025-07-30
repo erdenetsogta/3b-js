@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+    />
+  </head>
+  <body>
+    <div class="columns mt-6">
+      <div class="column is-half is-offset-one-quarter">
+        <div class="mb-4">
+          <button class="button is-info" onclick="average();">Average</button>
+          <button class="button is-primary" onclick="sum();">Sum</button>
+        </div>
+
+        <article class="message">
+          <div class="message-body" id="result"></div>
+        </article>
+      </div>
+    </div>
+
+    <script>
+      let output;
+
+      function print() {
+        document.getElementById("result").innerText = output;
+      }
+
+      function sum() {
+        let input = prompt("Input");
+
+        let a = 120;
+        let b = 100;
+        let sum = a + b;
+
+        output = sum;
+        print();
+      }
+
+      function average() {
+        let input = prompt("Ave");
+
+        let a = 11230;
+        let b = 100;
+        let avg = (a + b) / 2;
+
+        output = avg;
+        print();
+      }
+    </script>
+  </body>
+</html>
